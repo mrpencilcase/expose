@@ -1,0 +1,77 @@
+\documentclass[12pt]{scrartcl}
+
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage[paper=a4paper,margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\fontfamily{ccmr}
+
+
+
+\begin{document}
+
+
+\author{Lukas Löfler}
+\title{Expose over the dissertation project}
+\subtitle{ ''Atomistic studies of of mechanical properties of nitride super lattices''}
+
+\maketitle
+\section{Objective}
+Thin films are often used to enhance the properties of a components surface to full fill the requirements of modern tasks and applications. This leads to constants search for better coatings. There are two main ways to change the properties of the thin films themselves. One can either change the composition fo the material system or design the micro structure of the film. The simplest micro structure is a multi layer coating. Studies of such coatings have shown that at certain bi-layer periods the hardness and fracture toughness ($K_\mathrm{IC}$) are increased as can be seen in Fig. \ref{Rainer_fig}. Goal of my dissertation is to investigate the influence of the interfaces and defects in such coatings onto the mechanical properties of the films using atomistic modelling techniques such as Density Functional Theory (DFT) and Molecular Dynamics (MD).\medskip
+
+
+\section{State of the Art}
+
+Recent studies have shown that at certain bilayer periods the fracture toughness and the hardness of the coating increase significantly \cite{Hahn2016} as can be seen in Fig. \ref{Rainer_fig}.   
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\linewidth]{figs/rainer}
+	\caption{$K_ \mathrm{IC}$, Young's modulus and hardness of CrN/TiN multilayer coatings depending on the bi-layer period\cite{Hahn2016}.}
+	\label{Rainer_fig}
+\end{figure}
+
+The exact mechanisms behind that increase are subject of current research. To evaluate the mechanical properties of a structure there are several established techniques. The elastic constants can be calculated with the strain-stress method \cite{Yu2010}. To evaluate the strength and influence of the interface onto the superlattice the cleavage energy can be calculated \cite{Rehak2017}.   
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/real_to_sim.pdf}
+	\caption{Transition from the real coating to a simulation cell.}
+\end{figure}	
+
+To evaluate the mechanical properties of a material there are already several established approaches. The elastic constants an be calculated using the strain-stress method and the interface strength can be determined with cleavage calculations\cite{Rehak2017}. 
+Calculations for both the dislocations core energy and the peirels stress were already successfully performed by other groups using both density functional theory (DFT) and molecular dynamics (MD). Most of the studies were done in pure metals and only some in nitrides\cite{Lu2000}. For dislocations in multilayer coating there a no published studies yet.
+
+
+\section{Methodological Approach}
+
+The work is split into four different work packages which are listed and described in the following. 
+
+\subsection{Work package I: Tensile strength of superlattices containing CrN}
+To simulate the multilayer structure of the coating a supercell containing stacks of both nitrides were created. To evaluate the mechanical properties of the perfect system the elastic constants and the cleavage energy are calculated. For the elastic constants the strain-stress method following the approach of Yu et.al. \cite{Yu2010}. The cleavage energy is calculated by introducing an increasing gap at a specific plane of the supercell. From a fit to the obtained energies the critical stress at which the bonds break as well as the energy of the plane itself can be obtained. The cleavage energy is calculated normal and perpendicular to the interface. The calculations perpendicular are be able to compare the results more easily with experiments.  
+
+\subsection{Work package II:  Impact of impurities on the strength of superlattices}
+To come closer to real coatings point defects will be introduced to the supercells. The defects will include vacancies and substitutions of Boron and Oxygen in different concentrations. Like in the first work package the mechanical properties will be determined. The results of those calculations should then be correlated with experimental data coming from micro mechanical testing and atom probe tomography.
+
+\subsection{Work package III: Static properties of dislocations in TiN and CrN}
+The subject of the third packages are the properties of dislocations in TiN and CrN. Here is the MD method becomes important since dislocations have a long reaching effect in the material and therefore require large simulation cells. The dislocation core will be investigated with both DFT and MD. This is done to gain confidence in the results of the MD simulation to be able to go on for larger things like dislocation movement and crack propagation. 
+For the two method different setups are needed  
+It is well established that dislocations have an huge impact on the mechanical properties of a crystalline material. The structure and behaviour of the dislocation core and the Peirels stress will be determined. Due to the huge amount of atoms needed to properly simulate a dislocation molecular dynamics are.     
+
+\subsection{Work package IV: }
+The first task within this work packages is to evaluate the slip systems in the nitrides. This will be done by calculating the stacking fault energies for different lattice planes. The next step is to deform cells containing already dislocations until the point when the dislocation starts to move. 
+
+\section{Expected Results}
+The thesis should see on the following points:
+\begin{itemize}
+	\item The mechanical properties of multilayer coating will be characterized.
+	\item The influence of different defects near the interfaces will be shown.
+	\item The slip system in hard coatings will be characterized.
+	\item The 
+	
+\end{itemize}
+
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{expose}
+
+\end{document}
